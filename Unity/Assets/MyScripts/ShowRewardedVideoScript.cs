@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ShowRewardedVideoScript : MonoBehaviour
 {
@@ -75,6 +76,8 @@ public class ShowRewardedVideoScript : MonoBehaviour
 	void RewardedVideoOnAdRewardedEvent(IronSourcePlacement ironSourcePlacement, IronSourceAdInfo adInfo)
 	{
 		Debug.Log("unity-script: I got RewardedVideoOnAdRewardedEvent With Placement" + ironSourcePlacement + "And AdInfo " + adInfo);
+		userTotalCredits++;
+		AmountText.GetComponent<Text>().text = userTotalCredits.ToString();
 	}
 
 	void RewardedVideoOnAdClickedEvent(IronSourcePlacement ironSourcePlacement, IronSourceAdInfo adInfo)

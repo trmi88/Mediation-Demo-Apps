@@ -454,11 +454,11 @@ Payload for "WriteText BUILD/iOS/Info.plist"
     <key>CFBundleDevelopmentRegion</key>
     <string>en</string>
     <key>CFBundleDisplayName</key>
-    <string>Unity</string>
+    <string>NoiTu-MoneyCheck</string>
     <key>CFBundleExecutable</key>
     <string>${EXECUTABLE_NAME}</string>
     <key>CFBundleIdentifier</key>
-    <string>${PRODUCT_BUNDLE_IDENTIFIER}</string>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
@@ -574,14 +574,17 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 /* Begin PBXBuildFile section */
 		00000000008063A1000160D3 /* libiPhone-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A1C72A0E8063A1000160D3 /* libiPhone-lib.a */; };
 		00D3A795BD979B31F21A7095 /* BannerLevelPlayCallbacksWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FB589C0D98EC004B6C1A86A8 /* BannerLevelPlayCallbacksWrapper.m */; };
+		087B0E9E61616D49318FFAA2 /* Pods_UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF996B097C67183CEB76695 /* Pods_UnityFramework.framework */; };
 		0B8F3DE1D9932F5B50664C69 /* BannerLevelPlayCallbacksWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 16BDB58539285C2DB49EA798 /* BannerLevelPlayCallbacksWrapper.h */; };
 		1D45A5CCCCC4E76191AAF1D0 /* libil2cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE54DC7E56FA015DDC9659BD /* libil2cpp.a */; };
 		2AC69FCD1CFD55F5F3984E1B /* LPMInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA599E7A1CE8DBAB4F7FC79 /* LPMInitializer.h */; };
 		2DE220F778963E7058E882B0 /* LPMBannerAdViewCallbacksWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB91FADBD90098871201B7B /* LPMBannerAdViewCallbacksWrapper.m */; };
 		326448AC73F95B3EB246503D /* LPMBannerAdViewCallbacksWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F744A1FA101D2F908C20D4C3 /* LPMBannerAdViewCallbacksWrapper.h */; };
 		350E7888830D05539ADE39E3 /* InterstitialLevelPlayCallbacksWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A31FDA539E686C60B4F4FBC /* InterstitialLevelPlayCallbacksWrapper.m */; };
+		3BCC42668EA74650FC123FD9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */; };
 		415674EFD2EC187355BC05B1 /* LaunchScreen-iPhoneLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E24B93E9D27D99850693BAF /* LaunchScreen-iPhoneLandscape.png */; };
 		475B26F38A3A652C6174529D /* IUnityInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 679ACDCF6D14CA6FE6F81479 /* IUnityInterface.h */; };
+		4EA04DA99FB96F6DEDED09BB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526A451496F9AEF7B4DB1F74 /* WebKit.framework */; };
 		5623C57617FDCB0800090B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		5623C57717FDCB0800090B9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B5C100E5ED4C100C7819F /* UIKit.framework */; };
 		5623C57D17FDCB0900090B9E = {isa = PBXBuildFile; fileRef = 5623C57B17FDCB0900090B9E /* InfoPlist.strings */; };
@@ -589,9 +592,13 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		56C56C9817D6015200616839 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C56C9717D6015100616839 /* Images.xcassets */; };
 		574A8D1BFDF4103B13A6538A /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21ECD27EDF8EB21168769097 /* GameController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		63ACF7178776C648B96974EB /* baselib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD8D832DF5E49F3229DE515 /* baselib.a */; };
+		644C4786B58D5F83E24498BE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8B49889D187E28676E586E /* StoreKit.framework */; };
 		66515F9E9650092BCCCE4C1F /* LPMBannerAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B13B1BD1DCAE3757EC76F6 /* LPMBannerAdView.h */; };
+		682A4728BEA90942380AECEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B7959A1442E0F20026B3DD /* CoreGraphics.framework */; };
 		6C74C90E5109A70811BC6218 /* LPMBannerAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3811B2CC29429118A8256A /* LPMBannerAdView.m */; };
 		763ED5D885EABF761B2FE262 /* LaunchScreen-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6444ABDD2799CC877EBAF7E /* LaunchScreen-iPad.storyboard */; };
+		76F841328CEC78AB09DF8A52 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60948EA98C00F657CBFDFEB /* AdSupport.framework */; };
+		7B5C4D59B9B76D5421AB5631 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BAD78601F2B5A59006103DE /* Security.framework */; };
 		7F4E05AB2717219200A2CBE4 /* libGameAssembly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4E05A02717216D00A2CBE4 /* libGameAssembly.a */; };
 		826E40C67FAA509B29A0EFA3 /* IUnityGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 30347B5D7991A325732A4F10 /* IUnityGraphics.h */; };
 		862C245020AEC7AC006FB4AD /* UnityWebRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 862C244F20AEC7AC006FB4AD /* UnityWebRequest.mm */; };
@@ -600,7 +607,9 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		8A3831B5246956AA00CD74FD /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3831B4246956AA00CD74FD /* Metal.framework */; };
 		8BEDFA3929C88F86007F26D7 /* UnityViewControllerBase+visionOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEDFA3729C88F86007F26D7 /* UnityViewControllerBase+visionOS.h */; };
 		8BEDFA3A29C88F86007F26D7 /* UnityViewControllerBase+visionOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDFA3829C88F86007F26D7 /* UnityViewControllerBase+visionOS.mm */; };
+		8CBF4CEDABBF9D906E47EA6C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FD43950ED4745200FE3770 /* CFNetwork.framework */; };
 		91C1EB5F348833EAD02A7E9A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F2E4BD281D8D2761198E3AA0 /* PrivacyInfo.xcprivacy */; };
+		99BF47BEB3D7995AC8072927 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED74EDDB189068676602902 /* libz.tbd */; };
 		9D0A618B21BFE7F30094DC33 /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0A618A21BFE7F30094DC33 /* libiconv.2.tbd */; };
 		9D25ABA1213FB47800354C27 /* UnityFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D25AB9F213FB47800354C27 /* UnityFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D25ABA5213FB47800354C27 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D25AB9D213FB47800354C27 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -666,16 +675,25 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		9DFA7F9D21410F2E00C2880E /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D82DCFBB0E8000A5005D6AD8 /* main.mm */; };
 		9E277B346B541C2D072C5489 /* IUnityGraphicsMetal.h in Headers */ = {isa = PBXBuildFile; fileRef = 894C1B251937BE1BC2B4D36C /* IUnityGraphicsMetal.h */; };
 		AF2786F2943EBE0A756F21CC /* NSUserDefaults.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B6D2D12B065A216EB6E1F /* NSUserDefaults.mm */; };
+		BB41441DAEBFA67C271DCC14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8358D1B70ED1CC3700E3A684 /* AudioToolbox.framework */; };
 		BEE3E21D322649C83B0DD4DC /* LaunchScreen-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3A1B4C3FB1FC90023B942E /* LaunchScreen-iPhone.storyboard */; };
 		C4690AF74A49E9774ECC113D /* LPMInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B6AFECE5AE517059E66349 /* LPMInitializer.m */; };
 		C9B0A0FC4C568E4F219A344A /* RewardedVideoLevelPlayCallbacksWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62B53FD7F0D2349379EED9 /* RewardedVideoLevelPlayCallbacksWrapper.m */; };
+		CA6F49B19C383905F2F3F539 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */; };
 		CF1A023B26E004669512D8B7 /* IronSourceUnityConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D2D6862E59B4DE99DEB791 /* IronSourceUnityConfig.m */; };
 		D085C06443DB1B1B5C6637B6 /* LaunchScreen-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = D556450C3DBEECE838996A3D /* LaunchScreen-iPad.png */; };
+		D1894B0B9C9789FFFCD936F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B2570A0E62FF8A00468741 /* QuartzCore.framework */; };
+		D79947919A0F1C1D3FA6FA42 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5142E2BEA39D7D3D2BFD40 /* MobileCoreServices.framework */; };
+		D96D4AB19E4F9BD1DE482ABE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BCBA380FCF049A0030C3B2 /* SystemConfiguration.framework */; };
+		E4AE4D1BB091BAC59A3A2471 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		E5F1B3575CBF66E8F14745F7 /* iOSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = E14C7A75C2B1D8AC08FBE1C2 /* iOSBridge.m */; };
+		E6EE46A292BACBA4FF222465 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C11013C5C673007FBDD9 /* AVFoundation.framework */; };
 		E80D21941DD0FE7689D32150 /* InterstitialLevelPlayCallbacksWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B1DA0E830CD8436359BF3016 /* InterstitialLevelPlayCallbacksWrapper.h */; };
 		EF0E20741589F31C4E42780C /* iOSBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = E81DB60EFC6F7A533207B266 /* iOSBridge.h */; };
 		F5C03E9DD3BF40D8EC0F4404 /* LaunchScreen-iPhonePortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 681AA63C19788ACA381FB8C1 /* LaunchScreen-iPhonePortrait.png */; };
 		F63925D76F851887EE0EDC5E /* RewardedVideoLevelPlayCallbacksWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7BCB0C1E105C8C4638D46D /* RewardedVideoLevelPlayCallbacksWrapper.h */; };
+		F6EB6CABC0A5C8ED8AC3A620 /* Pods_Unity_iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D46586EEE8FF795F0743F9 /* Pods_Unity_iPhone.framework */; };
+		F9B044DF8E641BBE30EAF931 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48AC4346B663E9ACBD7580BB /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -738,14 +756,17 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		0084A6F53FDC53D8C88D04BC /* mscorlib__14.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mscorlib__14.cpp; path = Il2CppOutputProject/Source/il2cppOutput/mscorlib__14.cpp; sourceTree = SOURCE_ROOT; };
 		01542E4A7351BF537D5F9A2D /* UnityEngine.TextCoreTextEngineModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.TextCoreTextEngineModule.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextCoreTextEngineModule.cpp; sourceTree = SOURCE_ROOT; };
 		03F528621B447098000F4FB8 /* Il2CppOptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Il2CppOptions.cpp; sourceTree = "<group>"; };
+		060A4338E0AD7749597A9460 /* Pods-Unity-iPhone.releaseforprofiling.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unity-iPhone.releaseforprofiling.xcconfig"; path = "Target Support Files/Pods-Unity-iPhone/Pods-Unity-iPhone.releaseforprofiling.xcconfig"; sourceTree = "<group>"; };
 		0D31AAF3C6C0CC11D285C738 /* UnityEngine.CoreModule__2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.CoreModule__2.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.CoreModule__2.cpp; sourceTree = SOURCE_ROOT; };
 		0D74EFEA392C0E65155F7A96 /* UnityEngine.PropertiesModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.PropertiesModule_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.PropertiesModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
+		0E2AB8230EE73F34A707CE99 /* Pods-Unity-iPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unity-iPhone.debug.xcconfig"; path = "Target Support Files/Pods-Unity-iPhone/Pods-Unity-iPhone.debug.xcconfig"; sourceTree = "<group>"; };
 		0E3F3917340B2949C8B8E209 /* Il2CppMetadataUsage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Il2CppMetadataUsage.c; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppMetadataUsage.c; sourceTree = SOURCE_ROOT; };
 		0E687189B4541BF06DADF853 /* Generics__24.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__24.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__24.cpp; sourceTree = SOURCE_ROOT; };
 		0F1F382C4530E826AE63D9D6 /* UnityEngine.UIElementsModule__5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UIElementsModule__5.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__5.cpp; sourceTree = SOURCE_ROOT; };
 		0F795415320EF5804B496AD2 /* Il2CppInvokerTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppInvokerTable.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppInvokerTable.cpp; sourceTree = SOURCE_ROOT; };
 		0FD8E595BA80129EA8DD43F4 /* Generics__16.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__16.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__16.cpp; sourceTree = SOURCE_ROOT; };
 		11856605578FD8270FB7624A /* Generics__10.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__10.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__10.cpp; sourceTree = SOURCE_ROOT; };
+		1426BCE1C4D1B92945D425AC /* Pods-Unity-iPhone.releaseforrunning.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unity-iPhone.releaseforrunning.xcconfig"; path = "Target Support Files/Pods-Unity-iPhone/Pods-Unity-iPhone.releaseforrunning.xcconfig"; sourceTree = "<group>"; };
 		1562360321C1A01A12D225BC /* UnityEngine.SharedInternalsModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.SharedInternalsModule.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.SharedInternalsModule.cpp; sourceTree = SOURCE_ROOT; };
 		15A19AFEA90DC0B5F336605F /* UnityEngine.UIElementsModule__7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UIElementsModule__7.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__7.cpp; sourceTree = SOURCE_ROOT; };
 		16BDB58539285C2DB49EA798 /* BannerLevelPlayCallbacksWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BannerLevelPlayCallbacksWrapper.h; path = Libraries/LevelPlay/Runtime/Plugins/iOS/BannerLevelPlayCallbacksWrapper.h; sourceTree = SOURCE_ROOT; };
@@ -754,7 +775,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		1859EA9A19214E7B0022C3D3 /* MetalHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetalHelper.mm; sourceTree = "<group>"; };
 		18C2DA2269DDF3862E09DE6E /* Generics__36.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__36.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__36.cpp; sourceTree = SOURCE_ROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unity-Target-New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Unity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC31C363AA49E88C15788BB /* mscorlib__11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mscorlib__11.cpp; path = Il2CppOutputProject/Source/il2cppOutput/mscorlib__11.cpp; sourceTree = SOURCE_ROOT; };
 		1DD696E89C6A943954768877 /* Il2CppGenericInstDefinitions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Il2CppGenericInstDefinitions.c; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppGenericInstDefinitions.c; sourceTree = SOURCE_ROOT; };
 		1E24B93E9D27D99850693BAF /* LaunchScreen-iPhoneLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-iPhoneLandscape.png"; sourceTree = SOURCE_ROOT; };
@@ -800,12 +821,15 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		45EFF0285CC84ED02CB30A69 /* UnityEngine.UIElementsModule__9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UIElementsModule__9.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__9.cpp; sourceTree = SOURCE_ROOT; };
 		470F4DBFC6CF22AFB4920379 /* mscorlib_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = mscorlib_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/mscorlib_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		489B743989EEF3955BDA2C20 /* Generics__23.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__23.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__23.cpp; sourceTree = SOURCE_ROOT; };
+		48AC4346B663E9ACBD7580BB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		4A31FDA539E686C60B4F4FBC /* InterstitialLevelPlayCallbacksWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = InterstitialLevelPlayCallbacksWrapper.m; path = Libraries/LevelPlay/Runtime/Plugins/iOS/InterstitialLevelPlayCallbacksWrapper.m; sourceTree = SOURCE_ROOT; };
+		4A4599AE19915FA077677ED4 /* Pods-UnityFramework.releaseforprofiling.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnityFramework.releaseforprofiling.xcconfig"; path = "Target Support Files/Pods-UnityFramework/Pods-UnityFramework.releaseforprofiling.xcconfig"; sourceTree = "<group>"; };
 		4E090A331F27884B0077B28D /* StoreReview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreReview.m; sourceTree = "<group>"; };
 		4E33F765E8E51E7DFF5D52A6 /* UnityEngine.TextCoreFontEngineModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.TextCoreFontEngineModule.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextCoreFontEngineModule.cpp; sourceTree = SOURCE_ROOT; };
 		4ED0B579112CB1E12AEF01F5 /* mscorlib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mscorlib.cpp; path = Il2CppOutputProject/Source/il2cppOutput/mscorlib.cpp; sourceTree = SOURCE_ROOT; };
 		4EEAF035005D81C6A49A7C45 /* UnityEngine.TextCoreTextEngineModule__2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.TextCoreTextEngineModule__2.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextCoreTextEngineModule__2.cpp; sourceTree = SOURCE_ROOT; };
 		525CDBA21FAADF221B8950A5 /* Generics__5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__5.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__5.cpp; sourceTree = SOURCE_ROOT; };
+		526A451496F9AEF7B4DB1F74 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		52B13B1BD1DCAE3757EC76F6 /* LPMBannerAdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LPMBannerAdView.h; path = Libraries/LevelPlay/Runtime/Plugins/iOS/LPMBannerAdView.h; sourceTree = SOURCE_ROOT; };
 		53D50B1E0F71DFEBC9CABD14 /* UnityEngine.UIElementsModule__2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UIElementsModule__2.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__2.cpp; sourceTree = SOURCE_ROOT; };
 		544BB825B8624DFAB4CA9C2C /* UnityEngine.JSONSerializeModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.JSONSerializeModule_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.JSONSerializeModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
@@ -828,7 +852,10 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		5B2F54EB41B243A7C1793B5C /* UnityEngine.TextCoreTextEngineModule__3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.TextCoreTextEngineModule__3.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextCoreTextEngineModule__3.cpp; sourceTree = SOURCE_ROOT; };
 		5BAD78601F2B5A59006103DE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5D2B6D2D12B065A216EB6E1F /* NSUserDefaults.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = NSUserDefaults.mm; path = Libraries/com.unity.services.core/Runtime/Device/UserIdProviders/NSUserDefaults.mm; sourceTree = SOURCE_ROOT; };
+		5D8B49889D187E28676E586E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5EA521C38706003E7FF399CD /* Il2CppMetadataRegistration.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Il2CppMetadataRegistration.c; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppMetadataRegistration.c; sourceTree = SOURCE_ROOT; };
+		5ED74EDDB189068676602902 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5F1E573219AFCED66791E1D2 /* Pods-Unity-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unity-iPhone.release.xcconfig"; path = "Target Support Files/Pods-Unity-iPhone/Pods-Unity-iPhone.release.xcconfig"; sourceTree = "<group>"; };
 		61644B28313FCE72AA0F7731 /* Il2CppReversePInvokeWrapperTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppReversePInvokeWrapperTable.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppReversePInvokeWrapperTable.cpp; sourceTree = SOURCE_ROOT; };
 		61703DF54F612431C9B2CEC6 /* UnityEngine.IMGUIModule__1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.IMGUIModule__1.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.IMGUIModule__1.cpp; sourceTree = SOURCE_ROOT; };
 		6268E9B44CD8602C2A9D5536 /* GenericMethods__4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods__4.cpp; path = Il2CppOutputProject/Source/il2cppOutput/GenericMethods__4.cpp; sourceTree = SOURCE_ROOT; };
@@ -854,6 +881,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		715BA45FFD028756DA8BD144 /* Generics__17.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__17.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__17.cpp; sourceTree = SOURCE_ROOT; };
 		727353E0A17F3CD26C387C4B /* UnityEngine.UIModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.UIModule_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		733D2142097013827A6FD7A8 /* Il2CppGenericClassTable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Il2CppGenericClassTable.c; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppGenericClassTable.c; sourceTree = SOURCE_ROOT; };
+		7381E7E76A993C81DF33D425 /* Pods-UnityFramework.releaseforrunning.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnityFramework.releaseforrunning.xcconfig"; path = "Target Support Files/Pods-UnityFramework/Pods-UnityFramework.releaseforrunning.xcconfig"; sourceTree = "<group>"; };
 		73E1EB45A942E11178F3915F /* UnityEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.cpp; sourceTree = SOURCE_ROOT; };
 		76E90196E5C6B8BA16A9EB4C /* System_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = System_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/System_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		7A0126D9A77C3A2BC78EAC19 /* UnityEngine.PhysicsModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.PhysicsModule.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.PhysicsModule.cpp; sourceTree = SOURCE_ROOT; };
@@ -862,6 +890,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		7CD8D832DF5E49F3229DE515 /* baselib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = baselib.a; path = Libraries/baselib.a; sourceTree = SOURCE_ROOT; };
 		7D7877E7DCB013BB3B9D22F6 /* Unity.LevelPlay_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Unity.LevelPlay_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/Unity.LevelPlay_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		7DA599E7A1CE8DBAB4F7FC79 /* LPMInitializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LPMInitializer.h; path = Libraries/LevelPlay/Runtime/Plugins/iOS/LPMInitializer.h; sourceTree = SOURCE_ROOT; };
+		7E5142E2BEA39D7D3D2BFD40 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		7F36C11013C5C673007FBDD9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -947,6 +976,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DF7D168881C3EF89850AD0A /* Generics__6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__6.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__6.cpp; sourceTree = SOURCE_ROOT; };
 		8E6728ADD56BA33B896627DA /* Generics__1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__1.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__1.cpp; sourceTree = SOURCE_ROOT; };
+		8EF996B097C67183CEB76695 /* Pods_UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F13D042492DBEB7CF96DC23 /* Generics__9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__9.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__9.cpp; sourceTree = SOURCE_ROOT; };
 		8F8539D174DC5F6F066347FF /* Generics__39.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__39.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__39.cpp; sourceTree = SOURCE_ROOT; };
 		8FE3E92069BB36F8854D7277 /* __Generated_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = __Generated_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/__Generated_CodeGen.c; sourceTree = SOURCE_ROOT; };
@@ -971,6 +1001,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		A4591E5013E0219646DFFBD4 /* UnityEngine.GameCenterModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.GameCenterModule.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.GameCenterModule.cpp; sourceTree = SOURCE_ROOT; };
 		A504EDDC3C17119152F24F7F /* GenericMethods__3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods__3.cpp; path = Il2CppOutputProject/Source/il2cppOutput/GenericMethods__3.cpp; sourceTree = SOURCE_ROOT; };
 		A6444ABDD2799CC877EBAF7E /* LaunchScreen-iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "LaunchScreen-iPad.storyboard"; sourceTree = SOURCE_ROOT; };
+		A688ADB45659C5E809C6E6AC /* Pods-UnityFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnityFramework.release.xcconfig"; path = "Target Support Files/Pods-UnityFramework/Pods-UnityFramework.release.xcconfig"; sourceTree = "<group>"; };
 		A7CC23DF498D4EFEEB0AF888 /* UnityEngine.AnimationModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.AnimationModule_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.AnimationModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		AA31BF961B55660D0013FB1B /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		AA5D99861AFAD3C800B27605 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -1016,6 +1047,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		D51F4747FAFFCAC3B247BB05 /* Generics__26.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__26.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__26.cpp; sourceTree = SOURCE_ROOT; };
 		D556450C3DBEECE838996A3D /* LaunchScreen-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-iPad.png"; sourceTree = SOURCE_ROOT; };
 		D5FA3667394130C0BCCF8B0E /* ApplePrivacyManifestsMerge.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ApplePrivacyManifestsMerge.txt; path = UnityFramework/ApplePrivacyManifestsMerge.txt; sourceTree = SOURCE_ROOT; };
+		D60948EA98C00F657CBFDFEB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		D61973816F5E9F99E95C8C57 /* UnityEngine.IMGUIModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.IMGUIModule.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.IMGUIModule.cpp; sourceTree = SOURCE_ROOT; };
 		D740AE7756D71AACB0CCF7C7 /* Generics__8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__8.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__8.cpp; sourceTree = SOURCE_ROOT; };
 		D7503FB91502F4DD896CF714 /* UnityEngine.UIElementsModule__10.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UIElementsModule__10.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__10.cpp; sourceTree = SOURCE_ROOT; };
@@ -1025,6 +1057,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		DC1C002DA32AACE7AD91663B /* GenericMethods__9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods__9.cpp; path = Il2CppOutputProject/Source/il2cppOutput/GenericMethods__9.cpp; sourceTree = SOURCE_ROOT; };
 		DC641E85B09D087E3E294418 /* GenericMethods.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods.cpp; path = Il2CppOutputProject/Source/il2cppOutput/GenericMethods.cpp; sourceTree = SOURCE_ROOT; };
 		DCFF8C91896C4981029286E5 /* System.Core_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = System.Core_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/System.Core_CodeGen.c; sourceTree = SOURCE_ROOT; };
+		DD7DFE34B3D427E8764A290C /* Pods-UnityFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnityFramework.debug.xcconfig"; path = "Target Support Files/Pods-UnityFramework/Pods-UnityFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		DD952DDCAB0485953E3CE902 /* Il2CppCCFieldValuesTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCCFieldValuesTable.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppCCFieldValuesTable.cpp; sourceTree = SOURCE_ROOT; };
 		DDB2F8BB5DC4E5D804C3C134 /* Il2CppCCalculateFieldValues1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCCalculateFieldValues1.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppCCalculateFieldValues1.cpp; sourceTree = SOURCE_ROOT; };
 		E0263673B7642BE0F04DE813 /* UnityEngine.UI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UI.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UI.cpp; sourceTree = SOURCE_ROOT; };
@@ -1050,6 +1083,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		F6361BB52195CE5D00F61766 /* UnitySharedDecls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitySharedDecls.h; sourceTree = "<group>"; };
 		F6CDB022FB8DC8CFB499BE10 /* Generics__3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__3.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__3.cpp; sourceTree = SOURCE_ROOT; };
 		F744A1FA101D2F908C20D4C3 /* LPMBannerAdViewCallbacksWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LPMBannerAdViewCallbacksWrapper.h; path = Libraries/LevelPlay/Runtime/Plugins/iOS/LPMBannerAdViewCallbacksWrapper.h; sourceTree = SOURCE_ROOT; };
+		F7D46586EEE8FF795F0743F9 /* Pods_Unity_iPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unity_iPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F2599B7A76BDAC54FDCB60 /* UnityEngine.AndroidJNIModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.AndroidJNIModule.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.AndroidJNIModule.cpp; sourceTree = SOURCE_ROOT; };
 		F9F1230E7B00F6B2FFC7A8EB /* UnityEngine.Physics2DModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.Physics2DModule.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.Physics2DModule.cpp; sourceTree = SOURCE_ROOT; };
 		FAB4D031E79E43D0CC876610 /* Il2CppGenericMethodPointerTable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Il2CppGenericMethodPointerTable.c; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppGenericMethodPointerTable.c; sourceTree = SOURCE_ROOT; };
@@ -1068,6 +1102,23 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F841328CEC78AB09DF8A52 /* AdSupport.framework in Frameworks */,
+				BB41441DAEBFA67C271DCC14 /* AudioToolbox.framework in Frameworks */,
+				E6EE46A292BACBA4FF222465 /* AVFoundation.framework in Frameworks */,
+				682A4728BEA90942380AECEB /* CoreGraphics.framework in Frameworks */,
+				CA6F49B19C383905F2F3F539 /* CoreMedia.framework in Frameworks */,
+				F9B044DF8E641BBE30EAF931 /* CoreTelephony.framework in Frameworks */,
+				3BCC42668EA74650FC123FD9 /* CoreVideo.framework in Frameworks */,
+				8CBF4CEDABBF9D906E47EA6C /* CFNetwork.framework in Frameworks */,
+				E4AE4D1BB091BAC59A3A2471 /* Foundation.framework in Frameworks */,
+				D79947919A0F1C1D3FA6FA42 /* MobileCoreServices.framework in Frameworks */,
+				D1894B0B9C9789FFFCD936F9 /* QuartzCore.framework in Frameworks */,
+				7B5C4D59B9B76D5421AB5631 /* Security.framework in Frameworks */,
+				644C4786B58D5F83E24498BE /* StoreKit.framework in Frameworks */,
+				D96D4AB19E4F9BD1DE482ABE /* SystemConfiguration.framework in Frameworks */,
+				4EA04DA99FB96F6DEDED09BB /* WebKit.framework in Frameworks */,
+				99BF47BEB3D7995AC8072927 /* libz.tbd in Frameworks */,
+				F6EB6CABC0A5C8ED8AC3A620 /* Pods_Unity_iPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1114,6 +1165,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 				1D45A5CCCCC4E76191AAF1D0 /* libil2cpp.a in Frameworks */,
 				63ACF7178776C648B96974EB /* baselib.a in Frameworks */,
 				574A8D1BFDF4103B13A6538A /* GameController.framework in Frameworks */,
+				087B0E9E61616D49318FFAA2 /* Pods_UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1139,8 +1191,8 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */,
 				5623C57317FDCB0800090B9E /* Unity-iPhone Tests.xctest */,
+				1D6058910D05DD3D006BFB54 /* Unity.app */,
 				9D25AB9D213FB47800354C27 /* UnityFramework.framework */,
 				7F4E05A02717216D00A2CBE4 /* libGameAssembly.a */,
 			);
@@ -1177,6 +1229,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 				08E06EF576D79C4643098BCC /* Il2CppOutputProject */,
 				D8A1C7220E80637F000160D3 /* Libraries */,
 				9DA3B0422174CB96001678C7 /* MainApp */,
+				A282D97ED69568344A815E55 /* Pods */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				5623C57817FDCB0800090B9E /* Unity-iPhone Tests */,
 				9D25AB9E213FB47800354C27 /* UnityFramework */,
@@ -1197,24 +1250,32 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 			children = (
 				7F36C11013C5C673007FBDD9 /* AVFoundation.framework */,
 				8A20382C213D4B3C005E6C56 /* AVKit.framework */,
+				D60948EA98C00F657CBFDFEB /* AdSupport.framework */,
 				8358D1B70ED1CC3700E3A684 /* AudioToolbox.framework */,
 				56FD43950ED4745200FE3770 /* CFNetwork.framework */,
 				56B7959A1442E0F20026B3DD /* CoreGraphics.framework */,
 				5692F3DC0FA9D8E500EBA2F1 /* CoreLocation.framework */,
 				7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */,
 				56B795C11442E1100026B3DD /* CoreMotion.framework */,
+				48AC4346B663E9ACBD7580BB /* CoreTelephony.framework */,
 				AA5D99861AFAD3C800B27605 /* CoreText.framework */,
 				7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				21ECD27EDF8EB21168769097 /* GameController.framework */,
 				960391211D6CE46E003BF157 /* MediaToolbox.framework */,
 				8A3831B4246956AA00CD74FD /* Metal.framework */,
+				7E5142E2BEA39D7D3D2BFD40 /* MobileCoreServices.framework */,
 				83B2574B0E63022200468741 /* OpenAL.framework */,
+				8EF996B097C67183CEB76695 /* Pods_UnityFramework.framework */,
+				F7D46586EEE8FF795F0743F9 /* Pods_Unity_iPhone.framework */,
 				83B2570A0E62FF8A00468741 /* QuartzCore.framework */,
 				5BAD78601F2B5A59006103DE /* Security.framework */,
+				5D8B49889D187E28676E586E /* StoreKit.framework */,
 				56BCBA380FCF049A0030C3B2 /* SystemConfiguration.framework */,
 				830B5C100E5ED4C100C7819F /* UIKit.framework */,
+				526A451496F9AEF7B4DB1F74 /* WebKit.framework */,
 				9D0A618A21BFE7F30094DC33 /* libiconv.2.tbd */,
+				5ED74EDDB189068676602902 /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1563,6 +1624,21 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 			path = MainApp;
 			sourceTree = SOURCE_ROOT;
 		};
+		A282D97ED69568344A815E55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E2AB8230EE73F34A707CE99 /* Pods-Unity-iPhone.debug.xcconfig */,
+				5F1E573219AFCED66791E1D2 /* Pods-Unity-iPhone.release.xcconfig */,
+				060A4338E0AD7749597A9460 /* Pods-Unity-iPhone.releaseforprofiling.xcconfig */,
+				1426BCE1C4D1B92945D425AC /* Pods-Unity-iPhone.releaseforrunning.xcconfig */,
+				DD7DFE34B3D427E8764A290C /* Pods-UnityFramework.debug.xcconfig */,
+				A688ADB45659C5E809C6E6AC /* Pods-UnityFramework.release.xcconfig */,
+				4A4599AE19915FA077677ED4 /* Pods-UnityFramework.releaseforprofiling.xcconfig */,
+				7381E7E76A993C81DF33D425 /* Pods-UnityFramework.releaseforrunning.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B1D503123E4E35EC4E8CA9E9 /* Device */ = {
 			isa = PBXGroup;
 			children = (
@@ -1663,11 +1739,13 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Unity-iPhone" */;
 			buildPhases = (
+				DB4B3E62EC581DFA0101B303 /* ShellScript */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				83D0C1FD0E6C8D7700EBCE5D /* CopyFiles */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				9D25ABAB213FB47800354C27 /* Embed Frameworks */,
+				132B40A165AF8CFFC8A3D6FF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1676,7 +1754,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 			);
 			name = "Unity-iPhone";
 			productName = "iPhone-target";
-			productReference = 1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Unity.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5623C57217FDCB0800090B9E /* Unity-iPhone Tests */ = {
@@ -1719,10 +1797,12 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D25ABA6213FB47800354C27 /* Build configuration list for PBXNativeTarget "UnityFramework" */;
 			buildPhases = (
+				D63FC134F22C0508DEA1AE3E /* ShellScript */,
 				9D25AB9A213FB47800354C27 /* Headers */,
 				9D25AB98213FB47800354C27 /* Sources */,
 				9D25AB99213FB47800354C27 /* Frameworks */,
 				9D25AB9B213FB47800354C27 /* Resources */,
+				018325E1D133576110D79DBD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1742,7 +1822,8 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 			attributes = {
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 2H54HGJ99X;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.GameControllers.appletvos = {
 								enabled = 1;
@@ -1756,11 +1837,11 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 					};
 					7F4E059F2717216D00A2CBE4 = {
 						CreatedOnToolsVersion = 13.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					9D25AB9C213FB47800354C27 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						UnityFrameworkTarget = 1;
 					};
 				};
@@ -1777,6 +1858,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1822,6 +1904,46 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		018325E1D133576110D79DBD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnityFramework/Pods-UnityFramework-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/IronSourceAdQualitySDK/IronSourceAdQualityPrivacyInfo.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/IronSourceSDK/IronSourcePrivacyInfo.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IronSourceAdQualityPrivacyInfo.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IronSourcePrivacyInfo.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnityFramework/Pods-UnityFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		132B40A165AF8CFFC8A3D6FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Unity-iPhone/Pods-Unity-iPhone-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/IronSourceAdQualitySDK/IronSourceAdQualityPrivacyInfo.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/IronSourceSDK/IronSourcePrivacyInfo.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IronSourceAdQualityPrivacyInfo.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IronSourcePrivacyInfo.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Unity-iPhone/Pods-Unity-iPhone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C62A2A42F32E085EF849CF0B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1830,6 +1952,50 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "HOST_ARCH=$(uname -m)\nIL2CPP_DIR=\"$PROJECT_DIR/Il2CppOutputProject/IL2CPP/build/deploy_$HOST_ARCH\"\nIL2CPP=\"$IL2CPP_DIR/il2cpp\"\nchmod +x \"$IL2CPP\"\nif [ \"$HOST_ARCH\" = \"arm64\" ];\nthen\n    HOST_ARCH_BEE=\"arm64\"\nelse\n    HOST_ARCH_BEE=\"x64\"\nfi\nchmod +x \"$IL2CPP_DIR/bee_backend/mac-$HOST_ARCH_BEE/bee_backend\"\nif [ \"$CONFIGURATION\" = \"Debug\" ];\nthen\n    IL2CPP_CONFIG=\"Debug\"\nelse\n    IL2CPP_CONFIG=\"Release\"\nfi\n\"$IL2CPP\" --compile-cpp --platform=iOS --baselib-directory=\"$PROJECT_DIR/Libraries\" --additional-defines=IL2CPP_DEBUG=0 --incremental-g-c-time-slice=3 --dotnetprofile=unityaot-macos --profiler-report --print-command-line --external-lib-il2-cpp=\"$PROJECT_DIR/Libraries/libil2cpp.a\" --generatedcppdir=\"Il2CppOutputProject/Source/il2cppOutput\" --architecture=arm64 --outputpath=\"$CONFIGURATION_BUILD_DIR/libGameAssembly.a\" --cachedirectory=\"$CONFIGURATION_TEMP_DIR/artifacts/arm64\" --configuration=\"$IL2CPP_CONFIG\"\n";
+		};
+		D63FC134F22C0508DEA1AE3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnityFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB4B3E62EC581DFA0101B303 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Unity-iPhone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1948,6 +2114,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E2AB8230EE73F34A707CE99;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
@@ -1957,10 +2124,10 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2H54HGJ99X;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
@@ -1975,11 +2142,12 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompany.Unity;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DefaultCompany.NoiTu-MoneyCheck";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
-				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER_APP)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1990,6 +2158,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F1E573219AFCED66791E1D2;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
@@ -1999,10 +2168,10 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2H54HGJ99X;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
@@ -2015,11 +2184,12 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompany.Unity;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DefaultCompany.NoiTu-MoneyCheck";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
-				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER_APP)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2157,7 +2327,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PRODUCT_NAME_APP = Unity;
+				PRODUCT_NAME_APP = "NoiTu-MoneyCheck";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 			};
@@ -2165,6 +2335,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		};
 		56E860811D6757FF00A1AB2B /* ReleaseForRunning */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1426BCE1C4D1B92945D425AC;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
@@ -2174,11 +2345,11 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2H54HGJ99X;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
@@ -2191,11 +2362,12 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompany.Unity;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DefaultCompany.NoiTu-MoneyCheck";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
-				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER_APP)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2282,7 +2454,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PRODUCT_NAME_APP = Unity;
+				PRODUCT_NAME_APP = "NoiTu-MoneyCheck";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 			};
@@ -2290,6 +2462,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		};
 		56E860841D67581C00A1AB2B /* ReleaseForProfiling */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060A4338E0AD7749597A9460;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
@@ -2299,10 +2472,10 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2H54HGJ99X;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
@@ -2315,11 +2488,12 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompany.Unity;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DefaultCompany.NoiTu-MoneyCheck";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
-				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER_APP)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2527,6 +2701,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		};
 		9D25ABA7213FB47800354C27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A688ADB45659C5E809C6E6AC;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
@@ -2599,6 +2774,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		};
 		9D25ABA8213FB47800354C27 /* ReleaseForProfiling */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A4599AE19915FA077677ED4;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
@@ -2672,6 +2848,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		};
 		9D25ABA9213FB47800354C27 /* ReleaseForRunning */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7381E7E76A993C81DF33D425;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
@@ -2746,6 +2923,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 		};
 		9D25ABAA213FB47800354C27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7DFE34B3D427E8764A290C;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
@@ -2854,7 +3032,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME_APP = Unity;
+				PRODUCT_NAME_APP = "NoiTu-MoneyCheck";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 			};
@@ -2893,7 +3071,7 @@ Payload for "WriteText BUILD/iOS/Unity-iPhone.xcodeproj/project.pbxproj"
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PRODUCT_NAME_APP = Unity;
+				PRODUCT_NAME_APP = "NoiTu-MoneyCheck";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 			};
