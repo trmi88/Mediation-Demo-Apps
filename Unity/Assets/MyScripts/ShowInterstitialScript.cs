@@ -10,20 +10,20 @@ public class ShowInterstitialScript : MonoBehaviour
 	GameObject ShowButton;
 	GameObject ShowText;
 
- 	public static String INTERSTITIAL_INSTANCE_ID = "0";
+	public static String INTERSTITIAL_INSTANCE_ID = "0";
 
 	// Use this for initialization
-	void Start ()
+	void Start()
 	{
-		Debug.Log ("unity-script: ShowInterstitialScript Start called");
+		Debug.Log("unity-script: ShowInterstitialScript Start called");
 
-		LoadButton = GameObject.Find ("LoadInterstitial");
-		LoadText = GameObject.Find ("LoadInterstitialText");
-		LoadText.GetComponent<UnityEngine.UI.Text> ().color = UnityEngine.Color.blue;
-		
-		ShowButton = GameObject.Find ("ShowInterstitial");
-		ShowText = GameObject.Find ("ShowInterstitialText");
-		ShowText.GetComponent<UnityEngine.UI.Text> ().color = UnityEngine.Color.red;
+		LoadButton = GameObject.Find("LoadInterstitial");
+		LoadText = GameObject.Find("LoadInterstitialText");
+		LoadText.GetComponent<UnityEngine.UI.Text>().color = UnityEngine.Color.blue;
+
+		ShowButton = GameObject.Find("ShowInterstitial");
+		ShowText = GameObject.Find("ShowInterstitialText");
+		ShowText.GetComponent<UnityEngine.UI.Text>().color = UnityEngine.Color.red;
 
 		// Add Interstitial Events
 		IronSourceInterstitialEvents.onAdReadyEvent += InterstitialOnAdReadyEvent;
@@ -36,23 +36,26 @@ public class ShowInterstitialScript : MonoBehaviour
 
 	}
 
-	/************* Interstitial API *************/ 
-	public void LoadInterstitialButtonClicked ()
+	/************* Interstitial API *************/
+	public void LoadInterstitialButtonClicked()
 	{
-		Debug.Log ("unity-script: LoadInterstitialButtonClicked");
-		IronSource.Agent.loadInterstitial ();
+		Debug.Log("unity-script: LoadInterstitialButtonClicked");
+		IronSource.Agent.loadInterstitial();
 	}
-	
-	public void ShowInterstitialButtonClicked ()
+
+	public void ShowInterstitialButtonClicked()
 	{
-		Debug.Log ("unity-script: ShowInterstitialButtonClicked");
-		if (IronSource.Agent.isInterstitialReady ()) {
-			IronSource.Agent.showInterstitial ();
-		} else {
-			Debug.Log ("unity-script: IronSource.Agent.isInterstitialReady - False");
+		Debug.Log("unity-script: ShowInterstitialButtonClicked");
+		if (IronSource.Agent.isInterstitialReady())
+		{
+			IronSource.Agent.showInterstitial();
+		}
+		else
+		{
+			Debug.Log("unity-script: IronSource.Agent.isInterstitialReady - False");
 		}
 	}
-	
+
 	void InterstitialOnAdReadyEvent(IronSourceAdInfo adInfo)
 	{
 		Debug.Log("unity-script: I got InterstitialOnAdReadyEvent With AdInfo " + adInfo);

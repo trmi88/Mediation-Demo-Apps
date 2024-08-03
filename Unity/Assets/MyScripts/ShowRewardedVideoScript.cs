@@ -9,41 +9,44 @@ public class ShowRewardedVideoScript : MonoBehaviour
 	GameObject ShowText;
 	GameObject AmountText;
 	int userTotalCredits = 0;
-	
+
 	public static String REWARDED_INSTANCE_ID = "0";
 
 	// Use this for initialization
-	void Start ()
-	{	
-		Debug.Log ("unity-script: ShowRewardedVideoScript Start called");
+	void Start()
+	{
+		Debug.Log("unity-script: ShowRewardedVideoScript Start called");
 
-		ShowButton = GameObject.Find ("ShowRewardedVideo");
-		ShowText = GameObject.Find ("ShowRewardedVideoText"); 
-		ShowText.GetComponent<UnityEngine.UI.Text> ().color = UnityEngine.Color.red;
+		ShowButton = GameObject.Find("ShowRewardedVideo");
+		ShowText = GameObject.Find("ShowRewardedVideoText");
+		ShowText.GetComponent<UnityEngine.UI.Text>().color = UnityEngine.Color.red;
 
-		AmountText = GameObject.Find ("RVAmount");
+		AmountText = GameObject.Find("RVAmount");
 
 		// Add Rewarded Video Events
 		IronSourceRewardedVideoEvents.onAdOpenedEvent += RewardedVideoOnAdOpenedEvent;
-        IronSourceRewardedVideoEvents.onAdClosedEvent += RewardedVideoOnAdClosedEvent;
-        IronSourceRewardedVideoEvents.onAdAvailableEvent += RewardedVideoOnAdAvailable;
-        IronSourceRewardedVideoEvents.onAdUnavailableEvent += RewardedVideoOnAdUnavailable;
-        IronSourceRewardedVideoEvents.onAdShowFailedEvent += RewardedVideoOnAdShowFailedEvent;
-        IronSourceRewardedVideoEvents.onAdRewardedEvent += RewardedVideoOnAdRewardedEvent;
-        IronSourceRewardedVideoEvents.onAdClickedEvent += RewardedVideoOnAdClickedEvent;
+		IronSourceRewardedVideoEvents.onAdClosedEvent += RewardedVideoOnAdClosedEvent;
+		IronSourceRewardedVideoEvents.onAdAvailableEvent += RewardedVideoOnAdAvailable;
+		IronSourceRewardedVideoEvents.onAdUnavailableEvent += RewardedVideoOnAdUnavailable;
+		IronSourceRewardedVideoEvents.onAdShowFailedEvent += RewardedVideoOnAdShowFailedEvent;
+		IronSourceRewardedVideoEvents.onAdRewardedEvent += RewardedVideoOnAdRewardedEvent;
+		IronSourceRewardedVideoEvents.onAdClickedEvent += RewardedVideoOnAdClickedEvent;
 	}
 
-	/************* RewardedVideo API *************/ 
-	public void ShowRewardedVideoButtonClicked ()
+	/************* RewardedVideo API *************/
+	public void ShowRewardedVideoButtonClicked()
 	{
-		Debug.Log ("unity-script: ShowRewardedVideoButtonClicked");
-		if (IronSource.Agent.isRewardedVideoAvailable ()) {
-			IronSource.Agent.showRewardedVideo ();
-		} else {
-			Debug.Log ("unity-script: IronSource.Agent.isRewardedVideoAvailable - False");
+		Debug.Log("unity-script: ShowRewardedVideoButtonClicked");
+		if (IronSource.Agent.isRewardedVideoAvailable())
+		{
+			IronSource.Agent.showRewardedVideo();
+		}
+		else
+		{
+			Debug.Log("unity-script: IronSource.Agent.isRewardedVideoAvailable - False");
 		}
 	}
-	
+
 	void RewardedVideoOnAdOpenedEvent(IronSourceAdInfo adInfo)
 	{
 		Debug.Log("unity-script: I got RewardedVideoOnAdOpenedEvent With AdInfo " + adInfo);
